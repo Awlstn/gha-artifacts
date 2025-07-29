@@ -7,3 +7,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: npm ci
       - run: npm run build
+      - uses: actions/upload-artifact@v4.6.2
+        with:
+          name: build
+          path: build
